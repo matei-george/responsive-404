@@ -98,6 +98,7 @@ body {
       max-width: 45%;
    }
    .text-component {
+      padding: 32px;
       max-width: 50%;
    }
    .title {
