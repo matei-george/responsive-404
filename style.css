@@ -1,0 +1,114 @@
+/* Custom colors */
+:root {
+   --gray1: #333;
+   --gray2: #4f4f4f;
+   --gray3: #bdbdbd;
+}
+
+/* Global reset and body styles*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #fff;
+   font-family: "Space Mono", sans-serif;
+   font-size: 16px;
+   color: var(--gray1);
+   height: 100vh;
+   padding: 16px;
+}
+
+.wrapper {
+   height: 100%;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.navigation {
+   align-self: flex-start;
+   font-family: "Inconsolata";
+   font-size: 24px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+.component-image {
+   align-self: center;
+   max-width: 80%;
+}
+.text-component {
+   display: flex;
+   flex-flow: column nowrap;
+   gap: 48px;
+}
+.title {
+   font-family: "Space Mono", sans-serif;
+   font-weight: 700;
+   font-size: 36px;
+}
+.description {
+   color: var(--gray2);
+}
+.homepage-button {
+   width: 216px;
+   font-family: "Space Mono";
+   font-weight: 700;
+   font-size: 14px;
+   padding: 24px;
+   background-color: var(--gray1);
+   color: #fff;
+   border: none;
+   text-transform: uppercase;
+}
+.footer {
+   font-size: 14px;
+   font-family: "Montserrat", sans-serif;
+   color: var(--gray3);
+}
+.footer a:link,
+.footer a:visited,
+.footer a:hover,
+.footer a:active {
+   font-weight: bold;
+   color: var(--gray3);
+}
+
+/* Desktop */
+@media screen and (min-width: 950px) {
+   body {
+      padding: 0;
+   }
+   .wrapper {
+      padding: 32px;
+      height: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+   }
+   .wrapper * {
+      flex: 1 100%;
+   }
+   .component-image {
+      align-self: center;
+      max-width: 45%;
+   }
+   .text-component {
+      max-width: 50%;
+   }
+   .title {
+      font-size: 64px;
+   }
+   .description {
+      max-width: 60%;
+      font-size: 24px;
+   }
+   .footer {
+      align-self: flex-end;
+      text-align: center;
+   }
+}
